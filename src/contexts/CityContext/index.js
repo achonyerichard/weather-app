@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useState, useEffect,useMemo } from "react";
 import React from "react";
 import axios from "axios";
 
@@ -52,14 +52,14 @@ export const CityProvider = ({ children }) => {
     chinaWeather
   };
 
-  const endpoints = [
+  const endpoints = useMemo(()=>[
     "https://api.openweathermap.org/data/2.5/weather?q=Manchester&appid=64ecdec57d8058822462e8b9b44efa69&units=metric",
     "https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=64ecdec57d8058822462e8b9b44efa69&units=metric",
     "https://api.openweathermap.org/data/2.5/weather?q=Washington&appid=64ecdec57d8058822462e8b9b44efa69&units=metric",
     "https://api.openweathermap.org/data/2.5/weather?q=Lagos&appid=64ecdec57d8058822462e8b9b44efa69&units=metric",
     "https://api.openweathermap.org/data/2.5/weather?q=Lisbon&appid=64ecdec57d8058822462e8b9b44efa69&units=metric",
     "https://api.openweathermap.org/data/2.5/weather?q=Beijing&appid=64ecdec57d8058822462e8b9b44efa69&units=metric",
-  ];
+  ],[]) 
 
   useEffect(() => {
     // console.log("hi");
