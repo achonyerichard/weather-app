@@ -305,7 +305,7 @@ const Footer = () => {
           //   style={backgroundColor: rgba(0, 0, 0, 0.2)}
         >
           © 2021 Copyright:
-          <a> Weather-App.</a>
+          <p> Wepther-App.</p>
           <p>Powered by</p>
           <a href="https://openweathermap.org/">Open Weather API</a>
         </div>
