@@ -35,7 +35,6 @@ export const WeatherProvider = ({ children }) => {
             lng: position.coords.longitude,
           };
           setPos(newPos);
-          console.log(newPos);
         },
       );
     }

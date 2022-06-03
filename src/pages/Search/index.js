@@ -24,7 +24,6 @@ const Search = () => {
   const searchLocation = (event) => {
     if (event.key === "Enter") {
       event.preventDefault();
-      console.log("hi");
       axios.get(url).then((response) => {
         if (response) {
           setStatus(true);
