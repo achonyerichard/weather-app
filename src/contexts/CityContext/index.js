@@ -103,7 +103,7 @@ export const CityProvider = ({ children }) => {
 
         setLagosData(lagosLoc)
         setLagosWeather(lagosMain)
-        setLisbonCloud(lagosIndex)
+        setLagosCloud(lagosIndex)
 
         setLisbonData(lisbonLoc)
         setLisbonWeather(lisbonMain)
