@@ -116,7 +116,7 @@ export const CityProvider = ({ children }) => {
 
       })
     );
-  }, []);
+  }, [endpoints]);
 
   return <CityContext.Provider value={value}>{children}</CityContext.Provider>;
 };
