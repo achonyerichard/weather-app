@@ -107,7 +107,7 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-2   lg:grid-cols-3 gap-10 mb-10">
           <div className="max-w-sm w-full lg:max-w-full shadow-2xl shadow-inner  lg:flex mt-5  ">
             <img
-              className="object-cover h-[22rem]  w-full md:h-60 rounded-t-lg md:h-40 lg:w-48 md:rounded-none md:rounded-l-lg"
+              className="object-cover h-[22rem]  w-full md:h-60 rounded-t-lg md:h-auto lg:w-48 md:rounded-none md:rounded-l-lg"
               src={
                 "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
               }
