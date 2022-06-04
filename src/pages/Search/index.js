@@ -5,6 +5,7 @@ import { useState } from "react";
 import axios from "axios";
 
 const Search = () => {
+  const API_Key = process.env.REACT_APP_API_KEY;
   const [data, setData] = useState({});
   const [main, setMain] = useState({});
   const [desc, setDesc] = useState({});
@@ -12,7 +13,7 @@ const Search = () => {
   const [location, setLocation] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=64ecdec57d8058822462e8b9b44efa69&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_Key}&units=metric`;
 
   const onLocationChange = (event) => {
     setLocation(event.target.value);

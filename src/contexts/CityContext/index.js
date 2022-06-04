@@ -119,7 +119,7 @@ export const CityProvider = ({ children }) => {
 
       })
     );
-  }, [API_Key]);
+  }, []);
 
   return <CityContext.Provider value={value}>{children}</CityContext.Provider>;
 };
