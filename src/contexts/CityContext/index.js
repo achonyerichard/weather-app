@@ -8,6 +8,9 @@ const CityContext = createContext({
 });
 
 export const CityProvider = ({ children }) => {
+
+  const API_Key = process.env.REACT_APP_API_KEY;
+
   const [manData, setManData] = useState("");
   const [manWeather, setManWeather] = useState("");
   const [manCloud, setManCloud] = useState("");
@@ -53,12 +56,12 @@ export const CityProvider = ({ children }) => {
   };
 
   const endpoints = [
-    "https://api.openweathermap.org/data/2.5/weather?q=Manchester&appid=64ecdec57d8058822462e8b9b44efa69&units=metric",
-    "https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=64ecdec57d8058822462e8b9b44efa69&units=metric",
-    "https://api.openweathermap.org/data/2.5/weather?q=Washington&appid=64ecdec57d8058822462e8b9b44efa69&units=metric",
-    "https://api.openweathermap.org/data/2.5/weather?q=Lagos&appid=64ecdec57d8058822462e8b9b44efa69&units=metric",
-    "https://api.openweathermap.org/data/2.5/weather?q=Lisbon&appid=64ecdec57d8058822462e8b9b44efa69&units=metric",
-    "https://api.openweathermap.org/data/2.5/weather?q=Beijing&appid=64ecdec57d8058822462e8b9b44efa69&units=metric",
+    `https://api.openweathermap.org/data/2.5/weather?q=Manchester&appid=${API_Key}&units=metric`,
+    `https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=${API_Key}&units=metric`,
+    `https://api.openweathermap.org/data/2.5/weather?q=Washington&appid=${API_Key}&units=metric`,
+    `https://api.openweathermap.org/data/2.5/weather?q=Lagos&appid=${API_Key}&units=metric`,
+    `https://api.openweathermap.org/data/2.5/weather?q=Lisbon&appid=${API_Key}&units=metric`,
+    `https://api.openweathermap.org/data/2.5/weather?q=Beijing&appid=${API_Key}&units=metric`,
   ];
 
   useEffect(() => {
