@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
-  { name: "Search-Weather", href: "/search", current: false },
+  { name: "About", href: "/", current: false },
   { name: "Yours", href: "/", current: false },
 ];
 
@@ -77,8 +77,8 @@ export default function Nav() {
                   type="button"
                   className=" p-1 rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 >
-                  <Link to="/about" className="text-[color:white]">
-                    About
+                  <Link to="/search" className="text-[color:white]">
+                    Search
                   </Link>
                 </button>
 
